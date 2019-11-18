@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Shared types used across Eximchain APIs",
   "main": "build/index.js",
+  "types": "spec/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
   },
   "author": "John O'Sullivan <john@eximchain.com>",
   "license": "MIT",
