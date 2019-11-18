@@ -1,0 +1,4 @@
+{
+  "main" : "../../build/validators/index.js",
+  "types": "./index.ts"
+}
