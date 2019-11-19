@@ -1,4 +1,4 @@
 {
-  "main" : "../../build/events/event-types/index.js",
+  "main" : "../../../build/events/event-types/index.js",
   "types": "./index.ts"
 }
