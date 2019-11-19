@@ -273,11 +273,11 @@ export function typeValidationErrMsg(wrong:object, right:object) {
         let itemType = typeof item[reqdKeyName];
         if (!itemHasKey) {
           newKeyErrs.push(
-            `- ${name}: Missing value, please provide a '${sampleType}'`
+            `- ${reqdKeyName}: Missing value, please provide a '${sampleType}'`
           )
         } else if (itemType !== sampleType) {
           newKeyErrs.push(
-            `- ${name}: Incorrect value, please provide a '${sampleType}' instead of a '${itemType}'`
+            `- ${reqdKeyName}: Incorrect value, please provide a '${sampleType}' instead of a '${itemType}'`
           )
         }
       }
