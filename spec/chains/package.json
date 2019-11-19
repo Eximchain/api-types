@@ -1,0 +1,4 @@
+{
+  "main" : "../../build/chains/index.js",
+  "types": "./index.ts"
+}
