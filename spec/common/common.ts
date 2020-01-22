@@ -1,4 +1,4 @@
-import { isObject, keysAreStrings } from '../validators';
+import { isString, isObject, keysAreStrings } from '../validators';
 
 /**
  * Types for expressing all possible keys and values on another type
@@ -20,5 +20,5 @@ export type StringMapping = { [key: string]: string };
 export function isStringMapping(val:any): val is StringMapping {
   if (!isObject(val)) return false;
   let keys = Object.keys(val);
-  return keysAreStrings(val, keys);
+  return keysAreStrings(val, keys) && keys.every(isString);
 }
